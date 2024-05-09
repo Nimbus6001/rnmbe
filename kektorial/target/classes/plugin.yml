@@ -8,3 +8,5 @@ commands:
   info:
     description: Eine Info
     alsiases:
+  kit:
+    description: Ein Kit

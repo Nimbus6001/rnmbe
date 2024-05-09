@@ -3,6 +3,7 @@ package org.nimbus.kektorial;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.nimbus.kektorial.commands.Info;
+import org.nimbus.kektorial.commands.Kit;
 import org.nimbus.kektorial.welcome.WelcomeEvents;
 
 public final class Kektorial extends JavaPlugin {
@@ -15,6 +16,7 @@ public final class Kektorial extends JavaPlugin {
         saveDefaultConfig();
         config = getConfig();
         getCommand("info").setExecutor(new Info());
+        getCommand("kit").setExecutor(new Kit());
 
         getServer().getPluginManager().registerEvents(new WelcomeEvents(), this);
 
