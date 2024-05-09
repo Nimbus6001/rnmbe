@@ -11,6 +11,6 @@ public class WelcomeEvents implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         if (event.getPlayer().hasPermission("join.silent"))
             event.setJoinMessage("");
-        event.getPlayer().sendMessage(ChatColor.GOLD + "Willkommen, " + event.getPlayer().getName() + ". Du " + Kektorial.config.getString("onPlayerJoin.slur") + ".";
+        event.getPlayer().sendMessage(ChatColor.GOLD + "Willkommen, " + event.getPlayer().getName() + ". Du " + Kektorial.config.getString("onPlayerJoin.slur") + ".");
     }
 }
