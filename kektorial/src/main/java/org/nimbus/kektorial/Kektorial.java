@@ -7,7 +7,7 @@ import org.nimbus.kektorial.welcome.WelcomeEvents;
 
 public final class Kektorial extends JavaPlugin {
 
-    public static FileConfiguration config:
+    public static FileConfiguration config;
 
     @Override
     public void onEnable() {
