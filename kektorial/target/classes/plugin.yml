@@ -2,3 +2,9 @@ name: kektorial
 version: '1.0-SNAPSHOT'
 main: org.nimbus.kektorial.Kektorial
 api-version: '1.20'
+
+
+commands:
+  info:
+    description: Eine Info
+    alsiases:
