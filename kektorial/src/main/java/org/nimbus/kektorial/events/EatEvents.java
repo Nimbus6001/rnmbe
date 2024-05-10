@@ -4,6 +4,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 
+import java.util.Objects;
+
 public class EatEvents implements Listener {
 
     @EventHandler
