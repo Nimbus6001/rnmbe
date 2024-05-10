@@ -4,7 +4,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.nimbus.kektorial.commands.Info;
 import org.nimbus.kektorial.commands.Kit;
-import org.nimbus.kektorial.welcome.WelcomeEvents;
+import org.nimbus.kektorial.events.WelcomeEvents;
 
 public final class Kektorial extends JavaPlugin {
 
