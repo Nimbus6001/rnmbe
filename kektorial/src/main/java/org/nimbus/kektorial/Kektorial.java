@@ -5,6 +5,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.nimbus.kektorial.commands.Info;
 import org.nimbus.kektorial.commands.Kit;
 import org.nimbus.kektorial.events.WelcomeEvents;
+import org.nimbus.kektorial.events.EatEvents;
+
 
 public final class Kektorial extends JavaPlugin {
 
@@ -19,6 +21,7 @@ public final class Kektorial extends JavaPlugin {
         getCommand("kit").setExecutor(new Kit());
 
         getServer().getPluginManager().registerEvents(new WelcomeEvents(), this);
+        getServer().getPluginManager().registerEvents(new EatEvents(), this);
 
         getLogger().info("Kektorial started");
     }
