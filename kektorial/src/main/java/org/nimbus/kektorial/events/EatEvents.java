@@ -11,10 +11,10 @@ public class EatEvents implements Listener {
     @EventHandler
     public void onCraft(PlayerItemConsumeEvent event) {
         if (event.getItem().getItemMeta().getDisplayName().equals("Joel Apple")) {
-            event.getPlayer().sendMessage("Detected");
+            event.getPlayer().sendMessage(" JoelApple Detected");
         }
         else {
-            event.getPlayer().sendMessage("Nicht Detected");
+            event.getPlayer().sendMessage("Nicht JoelApple Detected");
         }
 
     }
