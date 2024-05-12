@@ -24,5 +24,5 @@ public class JoelApple {
         return Item;
     }
     NamespacedKey key = new NamespacedKey("joelapplerecipe", "joelapplerec");
-    ShapedRecipe recipe = new ShapedRecipe(key, item);
+    //ShapedRecipe recipe = new ShapedRecipe(key, item); //Ich hab das kommentiert weil ich stuff testen wollte und hier Fehlermeldungen kamen.
 }
