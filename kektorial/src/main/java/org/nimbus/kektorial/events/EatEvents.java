@@ -12,10 +12,7 @@ public class EatEvents implements Listener {
     @EventHandler
     public void onCraft(PlayerItemConsumeEvent event) {
         if (event.getItem().getItemMeta().getDisplayName().equals(ChatColor.GOLD + "Joel Apple") && event.getItem().getItemMeta().getCustomModelData() == 4201) {
-            event.getPlayer().sendMessage("JoelApple Detected");
-        }
-        else {
-            event.getPlayer().sendMessage("Nicht JoelApple Detected");
+            event.getPlayer().sendMessage("JoelApple Detected"); // replace this line with the code that should happen when the JoelApple objective is triggered
         }
 
     }
