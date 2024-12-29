@@ -12,8 +12,5 @@ public class PlaceEvents implements Listener {
         if (event.getBlockPlaced().getType().equals(Material.BEACON)) {
             event.getPlayer().sendMessage("Beacon detected");
         }
-        else {
-            event.getPlayer().sendMessage("Nicht Beacon detected");
-        }
     }
 }
