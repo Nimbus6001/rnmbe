@@ -7,6 +7,7 @@ import org.nimbus.kektorial.commands.Kit;
 import org.nimbus.kektorial.events.PlaceEvents;
 import org.nimbus.kektorial.events.WelcomeEvents;
 import org.nimbus.kektorial.events.EatEvents;
+import org.nimbus.kektorial.items.JoelApple;
 
 
 public final class Kektorial extends JavaPlugin {
@@ -24,6 +25,8 @@ public final class Kektorial extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new WelcomeEvents(), this);
         getServer().getPluginManager().registerEvents(new EatEvents(), this);
         getServer().getPluginManager().registerEvents(new PlaceEvents(), this);
+
+        getServer().addRecipe(JoelApple.getRecipe());
 
         getLogger().info("Kektorial started");
     }

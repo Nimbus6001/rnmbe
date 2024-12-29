@@ -19,10 +19,16 @@ public class JoelApple {
         ItemMeta meta = Item.getItemMeta();
 
         meta.setDisplayName(ChatColor.GOLD + "Joel Apple");
+        meta.setCustomModelData(4201);
 
         Item.setItemMeta(meta);
         return Item;
     }
-    NamespacedKey key = new NamespacedKey("joelapplerecipe", "joelapplerec");
-    //ShapedRecipe recipe = new ShapedRecipe(key, item); //Ich hab das kommentiert weil ich stuff testen wollte und hier Fehlermeldungen kamen.
+    public static ShapedRecipe getRecipe() {
+        NamespacedKey key = new NamespacedKey("joelapplerecipe", "joelapplerec");
+        ShapedRecipe recipe = new ShapedRecipe(key, JoelApple.get());
+        recipe.shape("AAA","AAA","AAA");
+        recipe.setIngredient('A', Material.ENCHANTED_GOLDEN_APPLE);
+        return recipe;
+    }
 }

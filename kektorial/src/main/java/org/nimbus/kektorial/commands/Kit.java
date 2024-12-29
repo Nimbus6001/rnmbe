@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
+import org.nimbus.kektorial.items.JoelApple;
 import org.nimbus.kektorial.items.LegendaryWoodenSword;
 
 public class Kit implements CommandExecutor {
@@ -18,6 +19,7 @@ public class Kit implements CommandExecutor {
 
         Player player = (Player) commandSender;
         player.getInventory().addItem(LegendaryWoodenSword.get());
+        player.getInventory().addItem(JoelApple.get());
         player.sendMessage("item given");
 
         return true;

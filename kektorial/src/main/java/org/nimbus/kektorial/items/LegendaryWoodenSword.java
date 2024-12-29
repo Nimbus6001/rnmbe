@@ -18,7 +18,7 @@ public class LegendaryWoodenSword {
         meta.setDisplayName(ChatColor.GOLD + "Legendary Wooden Sword");
         meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
-        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier("generic.attackDamage", 3, AttributeModifier.Operation.ADD_NUMBER));
+        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier("generic.attackDamage", 13, AttributeModifier.Operation.ADD_NUMBER));
 
         ArrayList<String> lore = new ArrayList<>();
         lore.add("This is Legendary");
