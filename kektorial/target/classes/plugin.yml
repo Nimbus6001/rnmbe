@@ -10,3 +10,9 @@ commands:
     alsiases:
   kit:
     description: Ein Kit
+  startbingoevent:
+    description: Das Event starten
+    aliases:
+  stopbingoevent:
+    description: Das Event stoppen (eigentlich nur für debugging)
+    aliases:

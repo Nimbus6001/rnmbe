@@ -11,7 +11,7 @@ import org.nimbus.kektorial.items.LegendaryWoodenSword;
 
 public class Kit implements CommandExecutor {
     @Override
-    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
         if (commandSender instanceof ConsoleCommandSender) {
             commandSender.sendMessage("Console can't hold items");
             return true;
